@@ -1,0 +1,5 @@
+<launch>
+  <node name="image_subscriber" pkg="school_classes" type="image_subscriber_node" output="screen">
+    <remap from="/camera/image_raw" to="/camera/image"/>
+  </node>
+</launch>
