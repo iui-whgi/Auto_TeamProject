@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/son/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/catkin_ws/build
+CMAKE_BINARY_DIR = /home/son/catkin_ws/build
 
 # Utility rule file for geometry_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ school_classes/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build: geometr
 .PHONY : school_classes/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 
 school_classes/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
-	cd /home/user/catkin_ws/build/school_classes && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/son/catkin_ws/build/school_classes && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : school_classes/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 school_classes/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend:
-	cd /home/user/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/catkin_ws/src /home/user/catkin_ws/src/school_classes /home/user/catkin_ws/build /home/user/catkin_ws/build/school_classes /home/user/catkin_ws/build/school_classes/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/son/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/son/catkin_ws/src /home/son/catkin_ws/src/school_classes /home/son/catkin_ws/build /home/son/catkin_ws/build/school_classes /home/son/catkin_ws/build/school_classes/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : school_classes/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
 

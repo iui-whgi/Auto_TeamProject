@@ -1,4 +1,4 @@
-prefix=/home/user/catkin_ws/install
+prefix=/home/son/catkin_ws/install
 
 Name: school_classes
 Description: Description of school_classes

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/user/catkin_ws/devel/lib/school_classes/image_subscriber_node"
-  "/home/user/catkin_ws/devel/lib/school_classes/image_subscriber_node.pdb"
+  "/home/son/catkin_ws/devel/lib/school_classes/image_subscriber_node"
+  "/home/son/catkin_ws/devel/lib/school_classes/image_subscriber_node.pdb"
   "CMakeFiles/image_subscriber_node.dir/src/image_subscriber_node.cpp.o"
 )
 

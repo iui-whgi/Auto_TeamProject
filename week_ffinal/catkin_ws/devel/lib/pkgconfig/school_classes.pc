@@ -1,8 +1,0 @@
-prefix=/home/son/catkin_ws/devel
-
-Name: school_classes
-Description: Description of school_classes
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

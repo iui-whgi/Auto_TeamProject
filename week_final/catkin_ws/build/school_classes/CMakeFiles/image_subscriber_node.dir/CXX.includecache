@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/user/catkin_ws/src/school_classes/src/image_subscriber_node.cpp
+/home/son/catkin_ws/src/school_classes/src/image_subscriber_node.cpp
 ros/ros.h
 -
 sensor_msgs/Image.h
@@ -307,6 +307,8 @@ ros/init.h
 /opt/ros/noetic/include/ros/ros/init.h
 common.h
 /opt/ros/noetic/include/ros/common.h
+boost/bind/bind.hpp
+-
 xmlrpcpp/XmlRpcValue.h
 -
 
