@@ -1,0 +1,45 @@
+#include <ros/ros.h>
+#include <sensor_msgs/Image.h>
+#include <cv_bridge/cv_bridge.h>
+#include <opencv2/opencv.hpp>
+#include <iostream>
+
+class ImageSubscriber {
+private:
+    ros::NodeHandle nh_;
+    ros::Subscriber image_sub_;
+    
+public:
+    ImageSubscriber() {
+        // Subscribe to the camera topic
+        image_sub_ = nh_.subscribe("/camera/image", 1, &ImageSubscriber::imageCallback, this);
+        ROS_INFO("Image subscriber node initialized");
+    }
+    
+    void imageCallback(const sensor_msgs::Image::ConstPtr& msg) {
+        try {
+            // Convert ROS image message to OpenCV image
+            cv_bridge::CvImagePtr cv_ptr;
+            cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+            
+            // Display the image
+            cv::imshow("Camera Image", cv_ptr->image);
+            cv::waitKey(3);
+            
+            // Log that we received an image
+            ROS_INFO("Received image: %dx%d", cv_ptr->image.cols, cv_ptr->image.rows);
+        }
+        catch (cv_bridge::Exception& e) {
+            ROS_ERROR("cv_bridge exception: %s", e.what());
+        }
+    }
+};
+
+int main(int argc, char** argv) {
+    ros::init(argc, argv, "image_subscriber");
+    cv::namedWindow("Camera Image");  // 추가!
+    ImageSubscriber subscriber;
+    ros::spin();
+    return 0;
+}
+

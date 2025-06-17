@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="school_classes" type="image_subscriber_node" name="image_subscriber" output="screen" />
+</launch>
