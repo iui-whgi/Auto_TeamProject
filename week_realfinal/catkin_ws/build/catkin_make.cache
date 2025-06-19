@@ -1,0 +1,2 @@
+school_classes:turtlebot3_bringup:turtlebot3_description:turtlebot3_example:turtlebot3_msgs:turtlebot3_navigation:turtlebot3_slam:turtlebot3_teleop
+-DCATKIN_DEVEL_PREFIX=/home/son/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/son/catkin_ws/install -G Unix Makefiles

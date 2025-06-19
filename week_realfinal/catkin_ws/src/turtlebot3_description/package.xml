@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>turtlebot3_description</name>
+  <version>1.0.0</version>
+  <description>Placeholder package file for turtlebot3_description</description>
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
